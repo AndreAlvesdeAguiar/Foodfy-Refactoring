@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="outdoor">
+        <div class="img_out">
+            <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+        </div>
+            <h1>{{item.title}}</h1>
+            <h5>{{item.author}}</h5>
+        </div>
+
+        <div class="ingredientes">
+            <h5>Ingredientes</h5>
+            <p  id="visibilidade">Esconder</p>
+        </div>
+        
+        <div class="lista_ingredientes">
+            <ul id="ing0">
+                {% for i in item.ingredients %}
+                    <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="ingredientes">
+            <h5>Modo De Preparo</h5>
+            <p id="visibilidade">Esconder</p>
+        </div>
+        
+        <div class="lista_ingredientes">
+            <ol id="ing1">
+               {% for i in item.preparation %}
+                    <li>{{i}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+
+         <div class="ingredientes">
+            <h5>Informações Adicionais</h5>
+            <p id="visibilidade">Esconder</p>
+        </div>
+        <p id="ing2" class="info_adicionais">{{item.information}}</p>
+    </div>
+        <script src="/script.js"></script>
+{% endblock %}

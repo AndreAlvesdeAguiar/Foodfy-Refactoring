@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/fonts.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <title>Foodfy</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a><img src="/logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/receitas">Receitas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="social">
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank" class="icon-facebook2"></a></li>
+            <li><a href="https://www.instagram.com"target="_blank" class="icon-instagram"></a></li>
+            <li><a href="https://www.whatsapp.com"target="_blank" class="icon-whatsapp"></a></li>
+            <li><a href="mailto:elvesbd@yahoo.com"target="_blank" class="icon-mail4"></a></li>
+        </ul>
+    </div>
+   {% block content %}
+
+   {% endblock %}
+
+
+    <footer>
+        <div class="finish">
+            <p>Todos os direitos reservados receitas Foodfy</p>
+        </div>
+    </footer>
+
+    <script href="/script.js"></script>
+</body>
+
+</html>

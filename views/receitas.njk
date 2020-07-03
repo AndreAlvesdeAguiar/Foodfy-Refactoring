@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <section class="pratos">
+        {% for item in items %}
+            <div class="prato" id="">
+                <div class="prato_image">
+                    <img src="{{item.image}}" alt="BURGER">
+                </div>
+                <div class="titulo">
+                    <p>{{item.title}}</p>
+                    <p class="autor">{{item.author}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+    <script src="/script.js"></script>
+{% endblock %}
